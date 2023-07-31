@@ -42,7 +42,7 @@ function atualizatable(){
 
 function atualizamediafinal() {
     const mediafinal= calculamedianotas()
-    document.getElementById('media-final-nota').innerHTML=mediafinal
+    document.getElementById('media-final-nota').innerHTML=mediafinal.toFixed(2)
     document.getElementById('media-final-resultado').innerHTML=mediafinal>=notaminima ? aprovadolabel : reprovadolabel
 
 }
